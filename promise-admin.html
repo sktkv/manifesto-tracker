@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            Admin: Add Promises
+        </title>
+    </head>
+
+    <body>
+        <form method = "POST", action="promise-admin.php">
+            <p>
+                <label> Category </label><br>
+                <input type="text" id="category" name="category" placeholder="Add Category" required />
+            </p>
+
+            <p>
+                <label> Promise </label><br>
+                <input type="text" id="promise" name="promise" placeholder="Add Promise" required />
+            </p>
+
+            <p>
+                <label> Status </label><br>
+                <select name="status" id="status">
+                    <option value="Fulfilled">Fulfilled</option>
+                    <option value="Under progress">Under progress</option>
+                    <option value="Yet to start"> Yet to start</option>
+                    <option value="Stalled"> Stalled </option>
+                    <option value="Broken"> Broken</option>
+                </select> <br>
+            </p>
+
+            <p>
+                <label> Details </label><br>
+                <textarea id="details" name="details" placeholder="Add details"  rows="10" cols="50">
+                    </textarea>
+            </p>
+
+            <p>
+                <label> Date of Entry</label><br>
+                <input type="date" id="date" name="date" placeholder="Add date of entry" />
+            </p>
+
+            <p>
+                <input type="submit" name="submit">
+            </p>
+
+            <p>
+                <a href = "index.php"> Return Home </a>
+            </p>
+
+        </form>
+    
+    </body>
+</html>
