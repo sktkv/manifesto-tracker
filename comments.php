@@ -15,5 +15,21 @@ function setComments($conn) {
     }
 
 
-
 }
+
+function getComments($conn){
+    $sql = "SELECT * FROM comments where parentsno = ".$_GET['id']. "";
+    $result = $conn -> query($sql);
+    while ($row = $result -> fetch_assoc()){
+        echo "<div class = 'comment-box'>";
+            echo $row['uid']."<br>";
+            echo $row['date']."<br>";
+            echo $row['message'];
+            
+        echo "</div>";
+    }
+
+    }
+    
+
+
