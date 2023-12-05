@@ -1,3 +1,18 @@
+*{
+    font-family: Verdana;
+
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 10px 7px;
+    margin:0;
+    line-height: 25px;
+    
+}
+
 .comment-box{
     width:845px;
     padding: 15px; 
@@ -5,3 +20,143 @@
     background-color:#f1f1f1;
     border-radius:4px;
 }
+
+.summary{
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer{
+    display:flex;
+    justify-content:center;
+    background-color: black;
+    color: white;
+    padding: 10px 10px 7px;
+    margin:0;
+    line-height: 25px;
+
+}
+
+/* Left side datasummary div and subdivs*/
+
+.datasummary{
+    display: flex;
+    flex-direction: column;
+    background-color: #efefefff;
+    margin:20px;
+    border-radius: 10px;
+    width:45%;
+    padding: 10px;
+    overflow:hidden;
+
+}
+
+.data{
+    display:flex;
+}
+
+.datatable{
+    display:flex;
+    align-items: center;
+    margin:10px;
+    width: 300px;
+    border-radius: 10px;
+    
+}
+
+/* pivottable styling*/
+.pivottable{
+    vertical-align: middle;
+    border-spacing:0;
+    border-collapse: separate;
+    margin: 10px;
+    width:169px;
+}
+.pivottable tr td{
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+.pivottable th{
+    font-weight:normal;
+    padding: 10px 12px 10px;
+}
+
+/* right side methods */
+.methods{
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.desc{
+    text-align: center;
+}
+
+.desc a{
+    text-decoration: none;
+    color:rgb(123, 123, 123);
+    background-color: transparent;
+        
+}
+
+/* Promisetable styling*/
+.promises{
+    margin: 10px;
+}
+.promisetable{
+    border-spacing:0;
+    border-collapse: separate;
+    margin: 10px;
+}
+.promisetable tr td{
+    font-size: 14px;
+    padding: 7px;
+}
+
+.promisetable th{
+    font-size: 15px;
+    padding: 7px;
+    background-color: #efefefff;
+}
+
+/* top-left border-radius */
+ table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  /* top-right border-radius */
+  table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+  }
+  
+  /* bottom-left border-radius */
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  
+  /* bottom-right border-radius */
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  /* pivot table*/
+
+  .pivottable tr:first-of-type {
+    border-top-left-radius: 10px;
+  }
+
+  .pivottable tr:first-of-type td:first-of-type {
+    border-top-right-radius:10px;
+  }
+
+  .pivottable tr:last-child th:first-child {
+    border-bottom-left-radius: 10px;}
+
+.pivottable tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+
+  

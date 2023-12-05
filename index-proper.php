@@ -88,10 +88,6 @@ $pieresult = mysqli_query($conn, $query);
 
         </div>
 
-        <div> 
-        <h2 style = "text-align:center"> Admin View </h2>
-        </div>
-
         <div class = "summary">
             <div class = "datasummary">
                 <div class = "daycounter">
@@ -178,7 +174,6 @@ $pieresult = mysqli_query($conn, $query);
             <th scope="col">Status</th>
             <th scope="col">Date</th>
             <th scope="col">Details</th>
-            <th scope = "col">Edit</th>
             </tr>
         </thead>
 
@@ -225,7 +220,6 @@ $pieresult = mysqli_query($conn, $query);
                                 <td>'.$row["status"].'</td>
                                 <td>'.$row["date"].'</td>
                                 <td><a href= "./promisepage.php?id='.$row['sno'].'">Details</a>
-                                <td><a class="btn btn-primary" href= '.$link.'role="button">Edit</a></td>
                                 
 
                             </tr> ';
@@ -247,7 +241,7 @@ $pieresult = mysqli_query($conn, $query);
 
         
         <div class = footer>
-        <a href = "index-proper.php"> Logout </a> 
+        <a href = "login-page.php"> Admin Login </a> 
         </div>
             
 
