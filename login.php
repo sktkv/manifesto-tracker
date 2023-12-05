@@ -31,7 +31,7 @@ if (isset($_POST['username']) && isset($_POST['password'])){
                 $SESSION['user_name'] = $row['user_name'];
                 $SESSION['name'] = $row['name'];
                 $SESSION['id'] = $row['id'];
-                header("Location:promise-admin.html");
+                header("Location:index.php");
                 exit();
             } else{
                 header("Location:login-page.php?error=Incorrect Username or Password");

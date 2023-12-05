@@ -39,7 +39,7 @@ $pieresult = mysqli_query($conn, $query);
                      var options = {    
                       //is3D:true,  
                       //pieHole: 0.4, 
-                    colors: ['#cccccc', '#ffeaab', '#fad2a7', '#e6b8af', '#d9ead3'],
+                    colors: ['#e6b8af', '#d9ead3', '#ffeaab', '#cccccc','#fad2a7'],
                     pieSliceTextStyle: {color: 'black'},
                     legend: {position: 'none'},
                     backgroundColor: {fill: 'transparent'},
@@ -112,7 +112,7 @@ $pieresult = mysqli_query($conn, $query);
                         </tr>
 
                         <tr style = "background-color: #fff2cc"> 
-                            <th scope="col">Under Progress</th>
+                            <th scope="col">In Progress</th>
                             <td> <?= getUP($conn) ?> </td> 
                         </tr>
                         
@@ -148,9 +148,9 @@ $pieresult = mysqli_query($conn, $query);
                 <p style = "text-align:center; font-weight:bold" > <span style="font-family: 'Noto Sans Kannada'; font-size:18px"> ಭರವಸೆ </span> (bharavase) </p>
                 <p style = "text-align:center; font-style:italic; font-size:14px"> kan. (noun): 1. firm belief; trust; reliance. 2. something wished for; a wish. </p>
                 <br>
-                <p class = "desc"> We voted them in because they promised us change, </p>
-                <p class = "desc"> and now, we must hold them accountable. </p>
-                <p class = "desc"> How many promises will they keep? And how many will they break? </p>
+                <p class = "desc"> we voted them in because they promised us change, </p>
+                <p class = "desc"> and now we hold them accountable. </p>
+                <p class = "desc"> how many promises will they keep?</p>
                 <br>
                 <p class = "desc"> <a href = "https://data.opencity.in/dataset/karnataka-assembly-elections-2023-manifestos/resource/indian-national-congress-%28inc%29-manifesto" target="_blank"> promise source </a></p>
 
@@ -208,7 +208,7 @@ $pieresult = mysqli_query($conn, $query);
 
                             $color = $row['status'] == "Yet to start" ? "#fad5aeff
 
-                            " : ($row['status']=="Under progress" ? "#fff2cc" : ($row['status']=="Stalled" ? "#ccccccff" : ($row['status']=="Broken" ? "#e6b8af" : "#d9ead3
+                            " : ($row['status']=="In progress" ? "#fff2cc" : ($row['status']=="Stalled" ? "#ccccccff" : ($row['status']=="Broken" ? "#e6b8af" : "#d9ead3
                             ")));
                         
                     // Table created in HTML. Dots concatenate
@@ -241,7 +241,7 @@ $pieresult = mysqli_query($conn, $query);
 
         
         <div class = footer>
-        <a href = "login-page.php"> Admin Login </a> 
+        <a href = "login-page.php"> admin login </a> 
         </div>
             
 

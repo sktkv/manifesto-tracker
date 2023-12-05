@@ -18,7 +18,7 @@ function setComments($conn) {
 }
 
 function getComments($conn){
-    $sql = "SELECT * FROM comments where parentsno = ".$_GET['id']. "";
+    $sql = "SELECT * FROM comments where parentsno = ".$_GET['id']. " ORDER BY date DESC";
     $result = $conn -> query($sql);
     while ($row = $result -> fetch_assoc()){
         echo "<div class = 'comment-box'>";

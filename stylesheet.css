@@ -2,6 +2,15 @@
     font-family: Verdana;
 
 }
+
+body{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 .header{
     display:flex;
     justify-content: space-between;
@@ -43,7 +52,7 @@
     display: flex;
     flex-direction: column;
     background-color: #efefefff;
-    margin:20px;
+    margin:20px 20px 10px 20px;
     border-radius: 10px;
     width:45%;
     padding: 10px;
@@ -86,7 +95,7 @@
 /* right side methods */
 .methods{
     width: 50%;
-    margin: 20px;
+    margin: 20px 20px 10px 20px;
     padding: 10px;
 }
 
@@ -158,5 +167,227 @@
     border-bottom-right-radius: 10px;
   }
 
+/* Editable table */
+#entrybutton{
+    display: flex;
+    justify-content:end;
+    padding:0px 0px 0px 0px;
+}
 
+#entrybutton button{
+    width: 10%;
+    background-color: #efefefff;
+    color: black;
+    padding: 10px 10px;
+    margin: 0px 20px 0px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: inset;
+}
+
+#entrybutton button:hover {
+    background-color: rgb(244, 243, 243)
+  }
+
+
+
+/* Loginpage */
+
+#formblank{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginform{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f7f5f5;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px #ccccccff;
+}
+
+#loginform input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #loginform input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #loginform button[type=submit] {
+    width: 100%;
+    background-color: #8ca981;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
   
+  #loginform button[type=submit]:hover {
+    background-color: #c0d7b8;
+  }
+
+  /* promise-edit.php */
+
+  .adminform{
+    display: flex;
+    justify-content: center;
+    padding:5px 20px;
+  }
+
+
+  .adminform input[type=text]{
+    width: 100%;
+    height:10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+  .adminform textarea{
+    width: 100%;
+    height:20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .adminform input[type=date]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .adminform input[type=submit]{
+    width: 100%;
+    background-color: #8ca981;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .adminform input[type=submit]:hover {
+    background-color: #c0d7b8;
+  }
+  
+  /* Promise Page*/
+
+  #promise-category{
+    text-align: center;
+    padding:5px;
+    margin:20px 10px 0px 10px;
+    font-weight: bold;
+  }
+
+  #promise-title{
+    padding:15px;
+    margin:10px;
+    text-align:center;
+  }
+
+  #promise-facts{
+    margin:10px;
+    font-weight: bold;
+  }
+
+  .promise-echo{
+    font-weight: normal;
+  }
+
+  #commenttext{
+    margin:10px;
+  }
+
+  #commenttext input[type=text]{
+    width: 38%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #commenttext textarea{
+    width: 55%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #commenttext button[type=submit] {
+    width: 10%;
+    height: 10%;
+    background-color: #efefefff;
+    color: black;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px rgb(193, 193, 193);
+  }
+  
+  #commenttext button[type=submit]:hover {
+    background-color: rgb(244, 243, 243);
+  }
+
+/* edit promise */
+
+/* #addblank{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#addform{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f7f5f5;
+    padding:20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px #ccccccff;
+}
+
+#addform > * {
+    margin: 10px 0;
+} */

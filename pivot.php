@@ -3,7 +3,7 @@
 function trial($conn){
     $sql = "SELECT status, COUNT(*) AS occurrences
     FROM promises
-    WHERE status = 'Under Progress'";
+    WHERE status = 'In Progress'";
     // /$sql = "SELECT status, COUNT(*) AS occurrences
     //  FROM promises
     // // WHERE status = 'Yet to Start'
@@ -23,7 +23,7 @@ function getUP($conn){
     // $var = "happy";
     // return $var;
 
-    $sql = "SELECT COUNT(*) FROM promises WHERE status = 'Under Progress' ";
+    $sql = "SELECT COUNT(*) FROM promises WHERE status = 'In Progress' ";
     // $result = $conn -> query($sql);
     $result = $conn -> query($sql);
     $row = mysqli_fetch_array($result);

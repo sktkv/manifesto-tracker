@@ -30,9 +30,9 @@ require_once(__ROOT__.'/manifesto/promise-db.php');
 
             if (mysqli_query($conn, $sql)) 
             { 
-              // If query done, go back to tips-form.html
+              // If query done, go back to index.php
                 echo "New record created successfully";
-				header('Location: promise-admin.html');
+				header('Location: index.php');
             } 
             else 
             {
